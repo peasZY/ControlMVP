@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLine">
+      <!--numColumns 每一行多少列,horizontalSpacing 两列之间的间距,verticalSpacing 两行之间的间距-->
+      <!--<GridView-->
+          <!--android:id="@+id/gv_home"-->
+          <!--android:background="@color/fragment_bg"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="match_parent"-->
+          <!--android:numColumns="3"-->
+          <!--android:horizontalSpacing="10dp"-->
+          <!--android:verticalSpacing="10dp">-->
+      <!--</GridView>-->
+      <TextView
+          android:layout_marginStart="10dp"
+          android:text="@string/common_function"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:background="@android:color/white"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </android.support.v7.widget.RecyclerView>
+</LinearLayout>

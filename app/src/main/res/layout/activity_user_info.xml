@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.lens.controlmvp.widget.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="278dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext_normal"
+            android:drawableStart="@drawable/search"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="11dp"
+            android:text="@string/query"
+            android:textColor="#007DCE"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007DCE"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请勾选查询方式"
+            android:textColor="@color/c_666"/>
+        <CheckBox
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+        <CheckBox
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employee"/>
+        <CheckBox
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_id"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007DCE"/>
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personnel_system"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/c_333"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/name"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_name"
+                    android:layout_toEndOf="@+id/textView" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/employee_id"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_userId"
+                    android:layout_toEndOf="@+id/textView2" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/department"
+                    android:id="@+id/textView3" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_department"
+                    android:layout_toEndOf="@+id/textView3" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/duty"
+                    android:id="@+id/textView4" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_duty"
+                    android:layout_toEndOf="@+id/textView4"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/status"
+                    android:id="@+id/textView5" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_status"
+                    android:layout_toEndOf="@+id/textView5"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/rank"
+                    android:id="@+id/textView6" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_rank"
+                    android:layout_toEndOf="@+id/textView6"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/sex"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_sex"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_toEndOf="@+id/textView7"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextView2"
+                    android:text="@string/ID_number"
+                    android:id="@+id/textView8" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:id="@+id/tv_ID_number"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_toEndOf="@+id/textView8"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#007DCE"/>
+    <TextView
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/IM_info"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/c_333"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp">
+             <RelativeLayout
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/name"
+                     android:id="@+id/textView9" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/tv_im_name"
+                     android:layout_toEndOf="@+id/textView9" />
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_alignParentEnd="true"
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/employee"
+                     android:id="@+id/textView10" />
+
+                 <TextView
+                     style="@style/TextStyle"
+                     android:id="@+id/tv_im_userId"
+                     android:layout_toEndOf="@+id/textView10"/>
+             </RelativeLayout>
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp">
+             <RelativeLayout
+                 android:layout_width="120dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/employee_id"
+                     android:id="@+id/textView11" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/ed_userId"
+                     android:layout_width="70dp"
+                     android:layout_height="20dp"
+                     android:layout_toEndOf="@+id/textView11"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_alignParentRight="true"
+                 android:layout_width="230dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/ID_number"
+                     android:id="@+id/textView12" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/ed_ID_number"
+                     android:layout_width="150dp"
+                     android:layout_height="20dp"
+                     android:text="431223199309342022"
+                     android:layout_toEndOf="@+id/textView12"/>
+             </RelativeLayout>
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp">
+             <RelativeLayout
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/department"
+                     android:id="@+id/textView13" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/et_department"
+                     android:layout_toEndOf="@+id/textView13" />
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_alignParentEnd="true"
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/duty"
+                     android:id="@+id/textView14" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/ed_duty"
+                     android:layout_toEndOf="@+id/textView14"/>
+             </RelativeLayout>
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp">
+             <RelativeLayout
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/phone"
+                     android:id="@+id/textView15" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/et_phone"
+                     android:layout_toEndOf="@+id/textView15" />
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_alignParentEnd="true"
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/cornet"
+                     android:id="@+id/textView16" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:id="@+id/ed_cornet"
+                     android:layout_toEndOf="@+id/textView16"/>
+             </RelativeLayout>
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp">
+             <RelativeLayout
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/account_status"
+                     android:id="@+id/textView17" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:layout_width="80dp"
+                     android:id="@+id/et_account_status"
+                     android:layout_toEndOf="@+id/textView17" />
+
+
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_alignParentEnd="true"
+                 android:layout_width="180dp"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     style="@style/TextView2"
+                     android:text="@string/cornet"
+                     android:id="@+id/textView18" />
+
+                 <EditText
+                     style="@style/MyEditText"
+                     android:layout_width="80dp"
+                     android:id="@+id/ed_du"
+                     android:layout_toEndOf="@+id/textView18"/>
+             </RelativeLayout>
+         </RelativeLayout>
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>
